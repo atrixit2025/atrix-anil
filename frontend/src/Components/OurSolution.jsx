@@ -70,37 +70,37 @@ const OurSolution = () => {
                             Digital agencies can vary in size and specialization. Some may focus on specific niches, such as healthcare or e-commerce, while others may offer a comprehensive.
                         </p>
                     </div>
-                <div className='col-1 grid md:grid-cols-2 grid-cols-1 items-start relative mt-32 '>
-                    <div id="circle-sec" className=" md:flex justify-center sticky md:top-28 hidden ">
-                        <div id="circle-wrapper" className="circle-wrapper h-[340px] w-[340px] rounded-[50%] border-[4px] border-[#2F2F2F] flex justify-center items-center">
-                            <div className="circle-content h-[320px] w-[320px] bg-[#1A1A1A] rounded-[50%] flex flex-col justify-center items-center">
-                                <p className="text-xl font-bold text-(--gray)">Step</p>
-                                <p className="text-5xl font-bold">{activeStep}/4</p>
+                    <div className='col-1 grid md:grid-cols-2 grid-cols-1 items-start relative mt-32 '>
+                        <div id="circle-sec" className=" md:flex justify-center sticky md:top-28 hidden ">
+                            <div id="circle-wrapper" className="circle-wrapper h-[340px] w-[340px] rounded-[50%] border-[4px] border-[#2F2F2F] flex justify-center items-center">
+                                <div className="circle-content h-[320px] w-[320px] bg-[#1A1A1A] rounded-[50%] flex flex-col justify-center items-center">
+                                    <p className="text-xl font-bold text-(--gray)">Step</p>
+                                    <p className="text-5xl font-bold">{activeStep}/4</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="process-cards" className=" col-2 md:border-l border-(--black) relative">
+                            <div className="w-full   md:pl-26  z-50  ">
+                                {blurbContent.map((item, index) => (
+                                    <div key={index} className="blurb-item pb-20 bg-(--darkblack) pl-1 pt-1 sticky top-20">
+                                        <img src={item.image} alt={item.title} className="filter invert brightness-0 contrast-100 mb-5" />
+                                        <p className='md:hidden inline-block mb-5 bg-(--black) px-5  py-2 rounded-lg font-bold text-sm' >STEP   {item.id}</p>
+                                        <h1 className="text-4xl font-bold mb-8">{item.title}</h1>
+                                        <p className="mb-5 text-(--gray)">{item.description}</p>
+                                        <ul>
+                                            {item.additionalText.map((text, idx) => (
+                                                <li className="flex gap-2 items-center text-(--gray) pt-2" key={idx}>
+                                                    <FiPlus /> {text}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
-
-                    <div id="process-cards" className=" col-2 md:border-l border-(--black) relative">
-                        <div className="w-full   md:pl-26  z-50  ">
-                            {blurbContent.map((item, index) => (
-                                <div key={index} className="blurb-item pb-20 bg-(--darkblack) pl-1 pt-1 sticky top-20">
-                                    <img src={item.image} alt={item.title} className="filter invert brightness-0 contrast-100 mb-5" />
-                                    <p className='md:hidden inline-block mb-5 bg-(--black) px-5  py-2 rounded-lg font-bold text-sm' >STEP   {item.id}</p>
-                                    <h1 className="text-4xl font-bold mb-8">{item.title}</h1>
-                                    <p className="mb-5 text-(--gray)">{item.description}</p>
-                                    <ul>
-                                        {item.additionalText.map((text, idx) => (
-                                            <li className="flex gap-2 items-center text-(--gray) pt-2" key={idx}>
-                                                <FiPlus /> {text}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
                 </div>
-            </div>
             </div>
 
 
