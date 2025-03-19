@@ -51,8 +51,6 @@ const OurSolution = () => {
         };
 
     }, []);
-
-
     return (
         <div className="Our-Solution-Process-section bg-(--darkblack) text-(--whitelight)   relative mb-[00px] ">
             <div className='container mx-auto  max-w-[1280px] w-[90%]'>

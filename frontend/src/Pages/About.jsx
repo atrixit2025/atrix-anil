@@ -11,6 +11,8 @@ import Marquee from "react-fast-marquee";
 import AboutSec from '../Components/about_us/AboutSec'
 import AboutCta from '../Components/about_us/AboutCta'
 import OurKeys from '../Components/about_us/OurKeys'
+import AboutHero from '../Components/about_us/AboutHero'
+import KeySec from '../Components/about_us/KeySec'
 
 
 const aboutData = [
@@ -31,12 +33,11 @@ const aboutData = [
 
 const About = () => {
 
-  // const heroImages = [hero1, hero2, hero3, hero4, hero5, hero6]
 
   return (
     <>
-
-      <div className="container mx-auto px-4 pt-44">
+      <AboutHero></AboutHero>
+      {/* <div className="container mx-auto px-4 pt-44">
         <div className="grid grid-cols-12 gap-4">
           <div className="col-span-6">
             <img src={hero1} alt="Hero 1" className="w-full" />
@@ -56,17 +57,16 @@ const About = () => {
           <div className="col-span-3">
             <img src={hero6} alt="Hero 6" className="w-full" />
           </div>
-        </div>
-      </div>
+        </div>  
+      </div> */}
+
+
 
 
       <div className="container mx-auto  pt-16 ">
         <h1 className='text-center text-6xl '>About Us</h1>
         <p className="text-center max-w-[1000px] mx-auto" > Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio delectus quod laudantium temporibus reprehenderit. Modi fuga eaque enim distinctio sequi aspernatur, ? Facilis aut pariatur accusantium, perferendis illum fuga hic. </p>
       </div>
-
-
-
       <div className="container mx-auto py-16 space-y-12 pb-16">
         {aboutData.map((item, index) => (
           <div className="row grid grid-cols-12 ">
@@ -92,8 +92,10 @@ const About = () => {
           </Marquee>
         </div>
       </div>
+
       <AboutCta></AboutCta>
       <OurKeys></OurKeys>
+      <KeySec></KeySec>
       <AboutSec></AboutSec>
       <OurSolution></OurSolution>
       <OurPortfolio></OurPortfolio>

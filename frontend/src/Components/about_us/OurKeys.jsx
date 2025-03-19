@@ -16,7 +16,6 @@ const OurKeys = () => {
                         Digital agencies can vary in size and specialization. Some may focus on specific niches, such as healthcare or e-commerce, while others may offer a comprehensive.
                     </p>
                 </div>
-
                 <div className="keys-cards-wrapper grid grid-cols-12">
                     <div className="col-span-4">
                         <div className="key-img-card">
