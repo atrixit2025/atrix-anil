@@ -37,7 +37,7 @@ const ContactForm = () => {
 
                                 <li>
                                     <input type="checkbox" name={tag} id={tag} className="peer hidden" />
-                                    <label htmlFor={tag} className=" contactFrom-custom-gradient border  px-4 inline-block peer-checked:bg-gradient-to-r from-blue-400 to-green-400 rounded-full font-medium  ">
+                                    <label htmlFor={tag} className="  border  px-4 py-1 mb-2 inline-block peer-checked:bg-gradient-to-r from-blue-400 to-green-400 rounded-full font-medium  ">
                                         {tag}
                                     </label>
                                 </li>
